@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Temporizador de BJJ</title>
+  </head>
+  <body>
+    <main id="configuracion" class="col-md-12">
+      <div id="timer" class="col-md-12">--:--</div>
+
+      <div>
+        <label for="preparacion">Tiempo de preparación segundos:</label>
+        <input type="number" id="preparacion" value="2" />
+      </div>
+
+      <div>
+        <label for="trabajo">Tiempo de trabajo (segundos):</label>
+        <input type="number" id="trabajo" value="3" />
+      </div>
+
+      <div>
+        <label for="descanso">Tiempo de descanso (segundos):</label>
+        <input type="number" id="descanso" value="4" />
+      </div>
+
+      <div>
+        <label for="rondas">Rondas:</label>
+        <input type="number" id="rondas" value="1" />
+      </div>
+    </main>
+
+    <button class="btn btn-primary" id="iniciar">Iniciar Temporizador</button>
+    <button class="btn btn-primary" id="detener">Detener Temporizador</button>
+    <button class="btn btn-primary" id="reiniciar">Reiniciar</button>
+
+    <audio id="timbre" src="assets/old-school-bell.mp3"></audio>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
